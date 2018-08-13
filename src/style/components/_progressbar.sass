@@ -1,0 +1,37 @@
+.progressbar__header
+  background: $c_darkGrey
+  border:
+    radius: 5px
+  color: $c_white
+  padding: 10px
+  text-align: center
+  margin-bottom: 10px
+  position: relative
+
+  &:after
+    content: ''
+    width: 0
+    height: 0
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 8px solid $c_darkGrey
+    position: absolute
+    bottom: -8px
+    right: 20%
+
+.progressbar__header--green
+  background: $c_green
+
+  &:after
+    border-top: 8px solid $c_green
+
+.progressbar__linekeeper
+  background: $c_lightGrey
+  border: 1px solid $c_middleGrey
+  height: 10px
+  position: relative
+
+.progressbar__line
+  background: $c_orange
+  height: 10px
+  width: 20%

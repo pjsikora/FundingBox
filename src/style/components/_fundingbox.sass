@@ -1,0 +1,59 @@
+
+
+.fundingbox
+  width: 350px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.fundingbox
+  .button--close
+    top: -5px
+
+.form
+  padding: 10px 20px
+  border: 1px solid $c_middleGrey
+    top: none
+  margin:
+    bottom: 10px
+
+.form__span
+  color: $c_orange
+  font:
+    weight: 700
+
+.form__p--why
+  color: $c_blue
+  cursor: pointer
+  font:
+    style: italic
+
+.form__keeper
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.form__inputkeeper
+  position: relative
+
+  &:before
+    position: absolute
+    top: 5px
+    left: 10px
+    content: '$'
+    color: $c_darkGrey
+    font:
+      size: 20px
+      weight: 700
+
+.form__input
+  border: 1px solid $c_middleGrey
+    radius: 5px
+  width: 100%
+  font:
+    size: 20px
+  padding: 5px 10px 5px 25px
+
+.tooltip
+  padding: 20px

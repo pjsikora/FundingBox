@@ -1,0 +1,49 @@
+.button
+  background: $c_green
+  border: 1px solid $c_darkGreen
+    radius: 5px
+    bottom: 2px solid $c_darkGreen
+  color: $c_white
+  width: 100%
+  font:
+    size: 20px
+    weight: 400
+  padding: 5px 10px
+  display: inline-block
+  text:
+    decoration: none
+    align: center
+  cursor: pointer
+
+.button--close
+  border:
+    radius: 50%
+  padding: 10px
+  width: 10px
+  height: 10px
+  background: $c_lightGrey
+  border: 1px solid $c_btnGrey
+    bottom: 2px solid $c_btnGrey
+  position: relative
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    top: 10px
+    left: 4px
+    width: 12px
+    height: 2px
+    color: #000
+    transform: rotate(45deg)
+    background: $c_darkGrey
+
+  &:after
+    transform: rotate(135deg)
+
+.button--grey
+  color: $c_darkGrey
+  background: $c_lightGrey
+  border: 1px solid $c_btnGrey
+    radius: 5px
+    bottom: 2px solid $c_btnGrey
